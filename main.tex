@@ -50,7 +50,7 @@
 % CUERPO DEL INFORME
 % ==========================================
 
-\section{Marco Teórico}
+\section{Introducción}
 El torque (representado por la letra griega tau, $\tau$) es la medida cuantitativa de la tendencia de una fuerza para causar o alterar la rotación de un cuerpo alrededor de un eje. Es una magnitud vectorial que se define como el producto cruz entre el vector de posición $\vec{r}$ (desde el eje de rotación hasta el punto de aplicación de la fuerza) y el vector fuerza $\vec{F}$. Matemáticamente se expresa como:
 \begin{equation}
     \vec{\tau} = \vec{r} \times \vec{F}
@@ -66,8 +66,8 @@ En el contexto de este laboratorio, las fuerzas aplicadas (los pesos de las masa
     \tau = r \cdot F
 \end{equation}
 
-\section{Procedimiento Experimental}
-Para llevar a cabo la experiencia, se dispuso de una viga de madera con perforaciones (orificios A y B) y masas de diferentes magnitudes. Se utilizó una balanza de precisión para determinar la masa exacta de cada objeto y una cinta métrica para medir los brazos de palanca ($r$). A continuación, se detallan las masas utilizadas a lo largo de la experiencia y sus pesos respectivos. Para calcular el peso ($F$), se multiplicó la masa experimental por la aceleración de gravedad estándar ($g \approx 9.8 \, \text{m/s}^2$).
+\section{Identificación de Masas y Montaje}
+A continuación se detallan las masas utilizadas a lo largo de la experiencia y sus pesos respectivos. Para calcular el peso ($F$), se multiplicó la masa experimental por la aceleración de gravedad estándar ($g \approx 9.8 \, \text{m/s}^2$).
 
 \begin{itemize}
     \item \textbf{Primera Parte (Eje en Orificio A):}
@@ -85,25 +85,23 @@ Para llevar a cabo la experiencia, se dispuso de una viga de madera con perforac
     \end{itemize}
 \end{itemize}
 
-Durante la primera parte, se suspendió la viga desde su orificio A y se buscaron las distancias necesarias para lograr el equilibrio rotacional ubicando las masas en distintas posiciones. En la segunda parte, se modificó el eje de rotación al orificio B, lo que introdujo el torque generado por la masa de la propia viga.
+\newpage
 
 \vspace{0.5cm}
 \begin{figure}[H]
     \centering
     \includegraphics[angle=90, scale=0.25]{parte a.jpeg}
-    \caption{Imagen del montaje experimental de la Primera Parte.}
+    \caption{Imagen del montaje de la Primera Parte.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.25]{parteb.jpeg}
-    \caption{Imagen del montaje experimental de la Segunda Parte.}
+    \caption{Imagen del montaje de la Segunda Parte.}
 \end{figure}
 
 \newpage
-\section{Resultados}
-A continuación, se presentan los datos obtenidos en el laboratorio expresados en el Sistema Internacional (SI). Los valores presentados como ``Torque'' representan el producto directo de la masa por el brazo de palanca ($m \cdot r$).
-
+\section{Resultados y Análisis}
 \subsection{Primera Parte: Viga suspendida del orificio A}
 Al suspender la viga desde su centro de gravedad (Orificio A), el torque ejercido por la propia viga es cero ($\tau_{\text{viga}} = 0$).
 
@@ -113,19 +111,19 @@ Al suspender la viga desde su centro de gravedad (Orificio A), el torque ejercid
 \toprule
 \textbf{Parámetro} & \textbf{Caso d} & \textbf{Caso e} & \textbf{Caso f} \\
 \midrule
-$m_1$ (kg) & 0.100 & 0.100 & 0.100 \\
-$r_1$ (m) & 0.150 & 0.300 & 0.300 \\
-\textbf{Torque 1} ($kg \cdot m$) & 0.015 & 0.030 & 0.030 \\
+$m_1$ (kg) & 0.1 & 0.1 & 0.1 \\
+$r_1$ (m) & 0.15 & 0.3 & 0.3 \\
+\textbf{Torque 1}* & 0.015 & 0.03 & 0.03 \\
 \midrule
 $m_2$ (kg) & 0.203 & 0.203 & 0.203 \\
-$r_2$ (m) & 0.300 & 0.150 & 0.150 \\
-\textbf{Torque 2} ($kg \cdot m$) & 0.0609 & 0.03045 & 0.03045 \\
+$r_2$ (m) & 0.3 & 0.15 & 0.15 \\
+\textbf{Torque 2}* & 0.0609 & 0.03045 & 0.03045 \\
 \midrule
 $m_3$ (kg) & 0.303 & 0.303 & 0.564 \\
-$r_3$ (m) & 0.240 & 0.200 & 0.100 \\
-\textbf{Torque 3} ($kg \cdot m$) & 0.07272 & 0.0606 & 0.0564 \\
+$r_3$ (m) & 0.24 & 0.2 & 0.1 \\
+\textbf{Torque 3}* & 0.07272 & 0.0606 & 0.0564 \\
 \midrule
-Torque viga ($kg \cdot m$) & 0 & 0 & 0 \\
+Torque viga & 0 & 0 & 0 \\
 \textbf{Sumatoria de torques} & \textbf{0.00318} & \textbf{-0.00015} & \textbf{0.00405} \\
 \bottomrule
 \end{tabular}
@@ -133,7 +131,7 @@ Torque viga ($kg \cdot m$) & 0 & 0 & 0 \\
 \end{table}
 
 \subsection{Segunda Parte: Viga suspendida del orificio B}
-Al suspender la viga desde el orificio B, el centro de masa de la viga ejerce un torque adicional de $0.154 \, kg\cdot m$ que interactúa con las demás masas para mantener el sistema horizontal.
+Al suspender la viga desde el orificio B, el centro de masa de la viga ejerce un torque adicional de $0.154$ que interactúa con las demás masas para mantener el sistema horizontal.
 
 \begin{table}[H]
 \centering
@@ -142,40 +140,25 @@ Al suspender la viga desde el orificio B, el centro de masa de la viga ejerce un
 \textbf{Parámetro} & \textbf{Caso g} & \textbf{Caso h} & \textbf{Caso i} \\
 \midrule
 $m_1$ (kg) & 0.048 & 0.048 & 0.048 \\
-$r_1$ (m) & 0.050 & 0.100 & 0.200 \\
-\textbf{Torque 1} ($kg \cdot m$) & 0.0024 & 0.0048 & 0.0096 \\
+$r_1$ (m) & 0.05 & 0.1 & 0.2 \\
+\textbf{Torque 1}* & 0.0024 & 0.0048 & 0.0096 \\
 \midrule
 $m_2$ (kg) & 0.101 & 0.101 & 0.101 \\
-$r_2$ (m) & 0.150 & 0.050 & 0.050 \\
-\textbf{Torque 2} ($kg \cdot m$) & 0.01515 & 0.00505 & 0.00505 \\
+$r_2$ (m) & 0.15 & 0.05 & 0.05 \\
+\textbf{Torque 2}* & 0.01515 & 0.00505 & 0.00505 \\
 \midrule
-$m_3$ (kg) & 0.820 & 0.820 & 0.820 \\
-$r_3$ (m) & 0.200 & 0.200 & 0.200 \\
-\textbf{Torque 3} ($kg \cdot m$) & 0.164 & 0.164 & 0.164 \\
+$m_3$ (kg) & 0.82 & 0.82 & 0.82 \\
+$r_3$ (m) & 0.2 & 0.2 & 0.2 \\
+\textbf{Torque 3}* & 0.164 & 0.164 & 0.164 \\
 \midrule
-Torque viga ($kg \cdot m$) & 0.154 & 0.154 & 0.154 \\
+Torque viga* & 0.154 & 0.154 & 0.154 \\
 \textbf{Sumatoria de torques} & \textbf{-0.00755} & \textbf{0.00015} & \textbf{-0.00465} \\
 \bottomrule
 \end{tabular}
 \caption{Datos experimentales correspondientes a la Segunda Parte.}
 \end{table}
 
-\section{Análisis de Datos}
-A partir de los resultados obtenidos, se observa que la sumatoria de torques en ambas partes del experimento es muy cercana a cero ($\sum (m \cdot r) \approx 0$). Para que estos datos estén expresados rigurosamente en unidades de Newton-metro (N$\cdot$m), los valores calculados deben ser multiplicados por la aceleración de gravedad ($g \approx 9.8 \, \text{m/s}^2$). Dado que la gravedad actúa como una constante sobre todo el sistema, la proporcionalidad se mantiene y demuestra el equilibrio rotacional ($\sum \tau \approx 0$).
-
-Las pequeñas variaciones que impiden que la sumatoria sea exactamente cero se pueden atribuir a diversas fuentes de error presentes en el desarrollo experimental. Entre los errores sistemáticos se identifica un posible defecto de calibración en la cinta métrica o la existencia de rozamiento en el eje de rotación que no fue considerado en el modelo teórico. Por otro lado, los errores aleatorios se asocian principalmente a dificultades visuales (errores de paralaje) al intentar determinar la horizontalidad exacta de la viga y al ubicar las masas en las marcas precisas de la regla métrica.
-
-\section{Conclusiones}
-Tras la realización del laboratorio, se comprobó experimentalmente la condición de equilibrio rotacional para un cuerpo rígido. Se evidenció que la suma de los torques debido a todas las fuerzas externas que actúan sobre la viga es cero, validando así el modelo teórico impartido en clases. 
-
-Las implicancias físicas de estos resultados demuestran que el punto de aplicación de una fuerza es tan importante como su magnitud al momento de generar rotación, lo cual se observó claramente al cambiar el eje de rotación del orificio A al orificio B, donde la propia masa de la viga comenzó a ejercer un torque significativo. 
-
-A pesar de existir una leve dispersión en la sumatoria final de los torques, el modelo teórico resulta ser altamente válido para el rango de datos medidos. Para mejorar la precisión en futuras sesiones, se sugiere incorporar un nivel de burbuja para garantizar la horizontalidad perfecta de la viga, así como minimizar la fricción en el eje de rotación utilizando lubricantes o rodamientos de mayor precisión.
-
-\section{Referencias}
-\begin{itemize}
-    \item Young, H. D., \& Freedman, R. A. (2018). \textit{Física Universitaria con Física Moderna} (14.ª ed., Vol. 1). Pearson Educación.
-    \item Guía de Laboratorio N$^\circ$2: Torque y equilibrio. Departamento de Física, Universidad de Los Lagos.
-\end{itemize}
+\vspace{0.5cm}
+\textbf{(*) Aclaración importante:} Los valores presentados como ``Torque'' en estas tablas representan el producto directo de la masa por el brazo de palanca ($m \cdot r$). Para que estos datos estén expresados rigurosamente en unidades de Newton-metro (N$\cdot$m), deben ser multiplicados por la aceleración de gravedad ($g \approx 9.8 \, \text{m/s}^2$). Al ser la gravedad una constante que afecta a todo el sistema por igual, la condición de equilibrio ($\sum (m \cdot r) \approx 0$) demuestra correctamente que la sumatoria neta de torques ($\sum \tau \approx 0$) se cumple con éxito.
 
 \end{document}
