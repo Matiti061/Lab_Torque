@@ -19,7 +19,7 @@ Radio 2 (m) & 0.3 & 0.15 & 0.15 \\
 \midrule
 Masa 3 (kg) & 0.303 & 0.303 & 0.564 \\
 Radio 3 (m) & 0.24 & 0.2 & 0.1 \\
-\textbf{Torque 3}* (Nm) & 0.0712656 & 0.59388 & 0.55272 \\
+\textbf{Torque 3}* (Nm) & 0.712656 & 0.59388 & 0.55272 \\
 \midrule
 Torque viga (Nm) & 0 & 0 & 0 \\
 \textbf{Sumatoria de torques} (Nm) & \textbf{0.031164} & \textbf{-0.00147} & \textbf{0.03969} \\
@@ -31,7 +31,7 @@ Torque viga (Nm) & 0 & 0 & 0 \\
 \newpage
 
 \section{Segunda parte: Viga suspendida del orificio <<B>>}
-Al suspender la viga desde el orificio <<B>>, el centro de masa de la viga ejerce un torque adicional de 0.154 Newtons por metro que interactúa con las demás masas para mantener el sistema horizontal.
+Al suspender la viga desde el orificio <<B>>, el peso de la propia viga produce un torque adicional de $1.5092$ N$\cdot$m, debido a que su centro de masa no coincide con el eje de rotación.
 
 \begin{table}[H]
 \centering
@@ -56,5 +56,78 @@ Torque viga* (Nm) & 1.5092 & 1.5092 & 1.5092 \\
 \bottomrule
 \end{tabular}
 \caption{Datos obtenidos durante la segunda parte del experimento.}
+
 \end{table}
 
+\newpage
+\section {Análisis}
+Los resultados obtenidos muestran que, en todos los casos estudiados, la sumatoria de los torques fue cercana a cero, lo que indica que la viga se encontraba aproximadamente en equilibrio rotacional. De acuerdo con la teoría, este equilibrio se alcanza cuando los torques que producen una rotación en sentido horario se compensan con aquellos que actúan en sentido antihorario.
+
+En la primera parte del experimento, la viga fue suspendida desde el orificio <<A>>, ubicado aproximadamente en su centro de masa. Por esta razón, el peso de la propia viga no produjo torque respecto al eje de rotación. Las sumatorias obtenidas fueron de $0{,}031164$ N$\cdot$m, $-0{,}00147$ N$\cdot$m y $0{,}03969$ N$\cdot$m para los casos <<d>>, <<e>> y <<f>>, respectivamente. El caso <<e>> presentó el valor más cercano a cero, por lo que fue la configuración que alcanzó con mayor precisión la condición de equilibrio rotacional.
+
+En la segunda parte, la viga fue suspendida desde el orificio <<B>>, punto que no coincidía con su centro de masa. Debido a esto, fue necesario considerar el torque producido por el peso de la propia viga, cuyo valor fue de $1{,}5092$ N$\cdot$m. Las sumatorias obtenidas fueron $-0{,}07399$ N$\cdot$m, $0{,}00147$ N$\cdot$m y $-0{,}04557$ N$\cdot$m para los casos <<g>>, <<h>> e <<i>>, respectivamente. El caso <<h>> fue el que presentó el mejor ajuste a la condición teórica de equilibrio.
+
+Los signos positivos y negativos de las sumatorias indican el sentido en el que predominó ligeramente el torque resultante. Un resultado positivo representa un pequeño predominio del sentido antihorario, mientras que un resultado negativo representa una tendencia hacia el sentido horario. Sin embargo, en todos los casos las diferencias fueron pequeñas en comparación con los torques individuales, por lo que se puede considerar que el sistema estuvo cercano al equilibrio.
+
+Las diferencias respecto del valor ideal de cero pueden atribuirse a errores experimentales, como la resolución limitada de la balanza, la incertidumbre en la medición de las distancias, la fricción en el punto de apoyo, la dificultad para mantener la viga completamente horizontal y una posible distribución no uniforme de la masa de la viga. A pesar de estas limitaciones, los resultados respaldan experimentalmente la condición de equilibrio rotacional:
+
+\[\sum \tau \approx 0.\]
+
+\newpage
+
+\section{Diferencia relativa respecto al equilibrio}
+
+
+Debido a que el valor teórico de la sumatoria de torques en una condición de equilibrio rotacional es igual a cero, no es posible aplicar directamente la fórmula convencional del error porcentual, ya que esto implicaría una división por cero. Por esta razón, se utilizó la diferencia relativa respecto al equilibrio, comparando la magnitud del torque neto con la suma de las magnitudes de los torques individuales aplicados al sistema.
+
+La expresión utilizada fue:
+
+\[
+\text{Diferencia relativa} =
+\frac{\left|\sum \tau\right|}
+{\sum |\tau_i|}
+\times 100\%.
+\]
+
+Este valor permite estimar qué tan grande fue el desequilibrio residual en comparación con los torques totales que actuaron sobre la viga. Mientras menor sea el porcentaje obtenido, mayor será la cercanía del sistema a la condición ideal de equilibrio rotacional.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Parámetros} & \textbf{Caso <<d>>} & \textbf{Caso <<e>>} & \textbf{Caso <<f>>} \\
+\midrule
+\textbf{Sumatoria de torques} (N$\cdot$m)
+& \textbf{0.031164}
+& \textbf{-0.00147}
+& \textbf{0.03969} \\
+\midrule
+Suma de torques individuales (N$\cdot$m)
+& 1.456476
+& 1.18629
+& 1.14513 \\
+\midrule
+\textbf{Diferencia relativa} (\%)
+& \textbf{2.14}
+& \textbf{0.12}
+& \textbf{3.47} \\
+\bottomrule
+\end{tabular}
+\caption{Diferencia relativa respecto al equilibrio para la primera parte del experimento.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Parámetros} & \textbf{Caso <<g>>} & \textbf{Caso <<h>>} & \textbf{Caso <<i>>} \\
+\midrule
+\textbf{Sumatoria de torques} (Nm) & \textbf{-0.07399} & \textbf{0.00147} & \textbf{-0.04557} \\
+\midrule
+Suma de torques individuales (Nm) & 3.28839 & 3.21293 & 3.25997 \\
+\midrule
+\textbf{Diferencia relativa} (\%) & \textbf{2.25} & \textbf{0.05} & \textbf{1.40} \\
+\bottomrule
+\end{tabular}
+\caption{Diferencia relativa respecto al equilibrio para la segunda parte del experimento.}
+\end{table}
