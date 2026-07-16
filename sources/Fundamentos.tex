@@ -4,13 +4,19 @@
 El propósito de este laboratorio es la verificación experimental de la condición de equilibrio rotacional para un cuerpo que puede rotar en torno a un eje fijo. Para ello se debe verificar que si el cuerpo no gira, es porque la suma de los torques causados por las fuerzas externas que actúan sobre él es cero.
 
 % que es el torque
-El momento de fuerza, a menudo también llamado <<par de torsión>> o <<torque>> y representado por la letra griega <<$\tau$>>, es una medida cuantitativa que indica la tendencia de una fuerza para causar o alterar la rotación de un cuerpo alrededor de un eje. Algebraicamente se define como el producto cruz entre un vector posición denominado <<r>>, que indica la distancia desde el eje de rotación hasta el punto de aplicación de la fuerza; un vector fuerza <<F>> y un componente seno que representa el ángulo desde <<r>> a <<F>>.
+El momento de fuerza, a menudo también llamado <<par de torsión>> o <<torque>> y representado por la letra griega <<$\tau$>>, es una magnitud vectorial que indica la tendencia de una fuerza a producir o modificar la rotación de un cuerpo alrededor de un eje.
 
-% formula del torque
-Esta expresión se representa matemáticamente como:
+Vectorialmente, el torque se define como el producto vectorial entre el vector posición $\vec{r}$, medido desde el eje de rotación hasta el punto de aplicación de la fuerza, y el vector fuerza $\vec{F}$.
 
 \begin{equation}
-    \vec{\tau} = \vec{r} \times \vec{F} \times \sin{\theta}
+\vec{\tau}=\vec{r}\times\vec{F}
+\end{equation}
+
+% formula del torque
+La magnitud del torque está dada por:
+
+\begin{equation}
+    {\tau} = rF\sin{(\theta)}
 \end{equation}
 
 Cabe destacar que se considera un par de torsión positivo cuando el cuerpo gira en sentido anti-horario y un par de torsión negativo cuando el cuerpo gira en sentido horario.
@@ -31,10 +37,10 @@ Es decir:
 \newpage
 
 % torque de los pesos
-En el contexto del experimento, los torques a calcular involucran el par de torsión generado por un peso respecto a un eje de rotación, por lo que el componente seno se desprecia al ser considerado igual a 1.
+En el contexto del experimento, los torques corresponden a aquellos producidos por el peso de las masas respecto a un eje de rotación. Debido a que la fuerza es perpendicular al brazo de la palanca, el ángulo entre ambos vectores es de $90^\circ$, por lo que $\sin(90^\circ)=1$.
 
-Por lo tanto, el torque de los pesos está dado por:
+Por lo tanto, el torque producido por cada peso está dado por:
 
 \begin{equation}
-    \tau = r \times m \times g
+    \tau = rmg
 \end{equation}
